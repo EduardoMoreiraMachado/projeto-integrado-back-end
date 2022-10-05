@@ -59,7 +59,7 @@ app.get('/.netlify/functions/api/cursos/', cors(), async function(request, respo
 });
 
 //EndPoint: listagem de alunos pelo nome do curso
-app.get('/.netlify/functions/api//alunos/', cors(), async function(request, response, next) {
+app.get('/.netlify/functions/api/alunos/', cors(), async function(request, response, next) {
 
     //recebe a variavel sigla por QueryString (indicada quando precisamos criar filtros)
     let sigla = request.query.sigla;
@@ -82,7 +82,7 @@ app.get('/.netlify/functions/api//alunos/', cors(), async function(request, resp
 });
 
 //EndPoint: listagem de discplinas pelo numero de matricula do aluno
-app.get('/.netlify/functions/api//disciplinas/', cors(), async function(request, response, next) {
+app.get('/.netlify/functions/api/disciplinas/', cors(), async function(request, response, next) {
 
     //recebe a variavel nome por QueryString (indicada quando precisamos criar filtros)
     let matricula = request.query.matricula;
@@ -104,7 +104,7 @@ app.get('/.netlify/functions/api//disciplinas/', cors(), async function(request,
 });
 
 //EndPoint: listagem de alunos pelo ano de conclusao do curso 
-app.get('/.netlify/functions/api//alunosAno/', cors(), async function(request, response, next) {
+app.get('/.netlify/functions/api/alunosAno/', cors(), async function(request, response, next) {
 
     //recebe a variavel ano por QueryString (indicada quando precisamos criar filtros)
     let ano = request.query.ano;
@@ -130,7 +130,7 @@ app.get('/.netlify/functions/api//alunosAno/', cors(), async function(request, r
 });
 
 //EndPoint: listagem de alunos pelo status de conclusao do curso
-app.get('/.netlify/functions/api//alunosStatus/', cors(), async function(request, response, next) {
+app.get('/.netlify/functions/api/alunosStatus/', cors(), async function(request, response, next) {
 
     //recebe a variavel status por QueryString (indicada quando precisamos criar filros)
     let status = request.query.status;
