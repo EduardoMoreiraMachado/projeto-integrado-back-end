@@ -788,7 +788,8 @@ const getCursoAlunos = function (filtro) {
                         curso: element.nome,
                         matricula: item.matricula,
                         sexo: item.sexo,
-                        status: item.status
+                        status: item.status,
+                        conslusao: element.conclusao
 
                     }
                 );
